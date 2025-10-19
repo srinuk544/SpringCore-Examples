@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <!--<bean id="demoCountryCapitals" name="demoCountryCapitals" class="Student">
+  <property name="studentname">
+   <list>
+    <value>Iceland</value>
+    <value>India</value>
+    <value>Sri Lanka</value>                   //List
+    <value>Russia</value>
+   </list>
+  </property>
+ </bean>-->
+
+
+
+
+<!--<bean id="demoCountryCapitals" name="demoCountryCapitals" class="Student">
+  <property name="studentname">
+  <set>
+	  
+	  <value>sri</value>
+	  <value>katta</value>                  //Set
+	  <value>sri</value>
+  </set>
+  </property>
+ </bean>-->
+ 
+ 
+ 
+ 
+ <bean id="demoCountryCapitals" name="demoCountryCapitals" class="Student">
+  <property name="studentname">
+   <map>
+    <entry key="Iceland" value="Reykjavik" />
+    <entry key="India" value="New Delhi" />
+    <entry key="Indonesia" value="Jakarta" />        <!--  //Map-->
+    <entry key="Iran" value="Tehran" />
+    <entry key="Iraq" value="Baghdad" />
+   </map>
+  </property>
+ </bean>
+</beans>

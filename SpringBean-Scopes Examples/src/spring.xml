@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+	
+	<bean id="id1" class="Author">
+		<property name="firstName" value="Srinu"/>
+		<property name="lastName" value="katta"/>
+		<property name="dateOfBirth" value="20/06/2000"/>
+		<property name="country" value="India"/>
+	</bean>
+	
+	<!--<bean id="id1" class="Author" scope="prototype">
+		<property name="firstName" value="Srinu"/>
+		<property name="lastName" value="katta"/>
+		<property name="dateOfBirth" value="20/06/2000"/>
+		<property name="country" value="India"/>
+	</bean>-->
+	
+</beans>

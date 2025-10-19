@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="osho" class="Author">
+  <property name="firstName" value="Chandra Mohan" />
+  <property name="lastName" value="Jain" />
+  <property name="dateOfBirth" value="11 December 1931" />
+  <property name="country" value="India" />
+ </bean>
+
+ <bean id="bookOfSecrets" class="Book">
+  <constructor-arg name="author" ref="osho" />
+  <constructor-arg name="title" value="The Book Of Secrets" />
+  <constructor-arg name="noOfPages" value="1152" />
+  <constructor-arg name="price" value="452" />
+ </bean>
+
+</beans>

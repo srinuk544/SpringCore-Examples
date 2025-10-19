@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+ default-init-method="init" default-destroy-method="cleanup">
+
+ 
+ <bean id="myParentBean" class="ParentBean">
+  <property name="name" value="parentBean" />
+  <property name="version" value="16.10" />
+ </bean>
+
+ <bean id="child" class="ChildBean" parent="myParentBean">
+  <property name="name" value="childBean" />
+  <property name="releasedDate" value="24th Nov 2016" />
+  <property name="author" value="Hari Krishna Gurram" />
+ </bean>
+
+</beans>

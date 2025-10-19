@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="india" class="Country">
+		<property name="name" value="India" />
+		<property name="capital" value="New Delhi" />
+	</bean>
+
+	<bean id="russia" class="Country">
+		<property name="name" value="Russia" />
+		<property name="capital" value="Moscow" />
+	</bean>
+
+	<bean id="countryCodes" name="countryCodes" class="Countries">
+		<property name="countriesMap">
+			<map>
+				<entry key="91" value-ref="india" />
+				<entry key="7" value-ref="russia" />
+			</map>
+		</property>
+	</bean>
+</beans>

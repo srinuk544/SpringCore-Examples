@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="id1" class="Author">
+		<property name="firstName" value="Chandra Mohan" />
+		<property name="lastName" value="Jain" />
+		<property name="dateOfBirth" value="11 December 1931" />
+		<property name="country" value="India" />
+	</bean>
+
+
+	<bean id="id2" class="Book">
+		<property name="title" value="Vedanta An Art of Dying" />
+		<property name="noOfPages" value="164" />
+		<property name="price" value="90" />
+		<property name="author">
+			<ref bean="id1" />
+		</property>
+	</bean>
+</beans>

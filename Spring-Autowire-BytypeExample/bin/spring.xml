@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="id" class="University" autowire="byName">
+		<property name="universityname" value="JNTUK"></property>
+
+	</bean>
+	<bean id="clg" class="College">
+		<property name="clgname" value="Qis college of engineering"></property>
+		<property name="clgaddress" value="Ongole"></property>
+
+	</bean>
+</beans>

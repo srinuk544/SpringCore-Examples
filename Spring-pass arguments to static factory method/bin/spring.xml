@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="squareBean" name="squareBean" class="ShapeFactory"
+  factory-method="getShape">
+  <constructor-arg name="shapeType" value="square"></constructor-arg>
+ </bean>
+
+ <bean id="rectangleBean" name="rectangleBean" class="ShapeFactory"
+  factory-method="getShape">
+  <constructor-arg name="shapeType" value="rectangle"></constructor-arg>
+ </bean>
+
+
+ <bean id="circleBean" name="circleBean" class="ShapeFactory"
+  factory-method="getShape">
+  <constructor-arg name="shapeType" value="circle"></constructor-arg>
+ </bean>
+
+</beans>

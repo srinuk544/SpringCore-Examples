@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="id1" class="Book">
+	<property name="title" value="Ammma Diary"></property>
+	<property name="noOfPages" value="150"></property>
+	<property name="price" value="3500"></property>
+	<property name="author" >
+	<bean id="ohh"  class="Author">
+		<property name="firstName" value="Srinu"></property>
+		<property name="lastName" value="katta"></property>
+		<property name="dateOfBirth" value="20/06/2000"></property>
+		<property name="country" value="India"></property>
+	</bean>
+	</property>
+</bean>
+
+</beans>

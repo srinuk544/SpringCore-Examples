@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+ default-init-method="init" default-destroy-method="cleanup">
+
+ <bean id="osho" class="Student">
+  <property name="name" value="Chandra Mohan" />
+  <property name="address" value="Jain" />
+  <property name="roll" value="11 December 1931" />
+ 
+ </bean>
+ 
+ <bean class="custombeanPostprocess" />
+ 
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="id1" name="osho" class="Books" >
+		<property name="name" value="Java">
+			
+		</property>
+		<property name="author" value="JemsGosle"></property>
+		<property name="price" value="2500"></property>
+		
+		
+	</bean>
+	
+	<alias name="osho"  alias="sri" />
+</beans>
